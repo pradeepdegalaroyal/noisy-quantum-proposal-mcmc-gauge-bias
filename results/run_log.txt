@@ -1,0 +1,42 @@
+calibrating proposal on a held-out instance
+device=cuda model=torus2x2 n=8 proposal=Proposal(g=0.5, t=2.0, steps=4, alpha=8.0)
+[main]
+  main seed 0 done
+  main seed 1 done
+  main seed 2 done
+  main seed 3 done
+  main seed 4 done
+[gamma_sweep]
+  gamma sweep seed 0 done
+  gamma sweep seed 1 done
+  gamma sweep seed 2 done
+  gamma sweep seed 3 done
+  gamma sweep seed 4 done
+[heatmap]
+  heatmap seed 0 done
+  heatmap seed 1 done
+  heatmap seed 2 done
+[scaling]
+  scaling ladder1 seed 0: 0.2s
+  scaling ladder1 seed 1: 0.2s
+  scaling ladder1 seed 2: 0.2s
+  scaling ladder2 seed 0: 0.6s
+  scaling ladder2 seed 1: 0.6s
+  scaling ladder2 seed 2: 0.6s
+  scaling torus2x2 seed 0: 1.9s
+  scaling torus2x2 seed 1: 2.1s
+  scaling torus2x2 seed 2: 2.2s
+  scaling ladder3 seed 0: 119.7s
+                                 method  tv_bias_mean  abs_energy_bias_mean  gap_mean  defect_mean  tv_bias_std  abs_energy_bias_std  gap_std   defect_std
+                  classical single-flip  5.761085e-14          6.481194e-14  0.008360 0.000000e+00 4.016036e-14         6.335625e-14 0.004362 0.000000e+00
+                      classical uniform  6.334781e-15          9.964725e-15  0.019380 0.000000e+00 5.882975e-15         9.944140e-15 0.001378 0.000000e+00
+               quantum ideal (no noise)  7.020217e-15          1.062334e-14  0.043387 5.463809e-16 3.454092e-15         4.181273e-15 0.005049 2.602387e-17
+                      quantum raw noise  9.911588e-02          1.532667e-01  0.044289 2.281246e-01 5.077102e-03         6.425017e-03 0.005271 1.451145e-02
+              quantum unital noise only  9.447111e-03          8.139809e-03  0.040784 7.630335e-02 8.974107e-04         2.902904e-03 0.004793 3.964382e-03
+                   + readout flip-twirl  6.930612e-02          1.027580e-01  0.042791 1.598178e-01 5.383902e-03         5.595454e-03 0.004973 1.416997e-02
+                     + gate Pauli-twirl  4.163026e-02          5.859542e-02  0.041864 1.148689e-01 6.587335e-04         2.100624e-03 0.004756 4.208752e-03
+                       + both (twirled)  1.108198e-02          1.038731e-02  0.040628 8.349268e-02 1.068773e-03         3.308961e-03 0.004496 4.086358e-03
+       + matched input flips (tailored)  4.002736e-03          4.047712e-03  0.039206 2.896524e-02 3.652794e-04         1.021222e-03 0.004327 1.856906e-03
+    tailored + time-symmetric placement  3.831329e-08          2.614092e-08  0.039233 2.428938e-07 1.157074e-08         6.654535e-09 0.004336 4.081179e-09
+gate-twirl + time-symmetric, no readout  4.417969e-08          3.026716e-08  0.042350 3.212893e-07 1.265322e-08         8.075805e-09 0.004572 5.531860e-09
+total 310.1s

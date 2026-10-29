@@ -1,0 +1,39 @@
+{
+  "quick": false,
+  "device": "cuda",
+  "model": "torus2x2",
+  "n_qubits": 8,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "proposal": {
+    "g": 0.5,
+    "t": 2.0,
+    "steps": 4,
+    "alpha": 8.0
+  },
+  "kappa": 0.3,
+  "nominal_noise": {
+    "p_dep": 0.002,
+    "gamma": 0.002,
+    "p_z": 0.002,
+    "e0": 0.01,
+    "e1": 0.03,
+    "one_q_factor": 0.1
+  },
+  "stage_seconds": {
+    "main": 33.17845010757446,
+    "gamma_sweep": 51.12324666976929,
+    "heatmap": 79.29616975784302,
+    "scaling": 128.11724662780762,
+    "chain_check": 4.339839220046997
+  },
+  "total_seconds": 310.0577356815338,
+  "python": "3.11.9",
+  "torch": "2.11.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 5050 Laptop GPU"
+}

@@ -1,0 +1,8 @@
+{
+  "steps": 300000,
+  "exact_tv_bias": 0.08813325857585487,
+  "empirical_tv_to_target": 0.09278896133985289,
+  "empirical_tv_to_exact_stationary": 0.017558930908831375,
+  "exact_energy_bias_sigma": -0.152616199472652,
+  "empirical_energy_bias_sigma": -0.1610351176319551
+}
